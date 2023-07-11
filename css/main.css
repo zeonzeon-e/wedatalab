@@ -2,6 +2,7 @@ body{
   margin: auto;
   text-align: center;
   width: 100%;
+  justify-content: center;
 }
 
 
@@ -185,28 +186,27 @@ body{
 }
 
 nav{
+  display: flex;
   position: fixed;
   width: 100%;
   height: 80px;
-  align-items: center;
   background-color: azure;
   z-index: 2;
 }
 
-.menu > ul > li{
-    list-style: none;
-}
-
-.menu > ul > li > a {
-  text-decoration: none;
-  color: #333;
+.navMenu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .main_logo{
   width: 20%;
   height: 100%;
-  display: inline-block;
+  display: flex;
   align-items: center;
+  
 }
 
 .main_logo img{
@@ -216,48 +216,45 @@ nav{
 
 
 .menu {
-  display: inline-block;
+  display: flex;
   font: bold 16px;
   width: 60%;
   color: black;
-  margin: 0 auto;
   z-index: 2;
-  right: 0;
+  justify-content: flex-end;
+
 }
 
-.menu a {
+.menuUrl {
   text-decoration: none;
   color: #333;
+  font-weight: bold;
 }
 
-.menu > ul {
-  width: 80%;
-  left: 10px;
-
-}
-
-.menu > ul > li {
+.semiTitle {
   float: left;
   width: fit-content;
   padding-right: 20px;
   align-items: center;
+  list-style: none;
   
 }
 
-.menu > ul > li > ul {
+.semiTitleDetail {
   width: 200px;
   display: none;
   position: absolute;
   font-size: 14px;
+
   background: skyblue;
 }
 
-.menu > ul > li:hover > ul {
+.semiTitle:hover > ul {
   display: block;
   z-index: 3;
 }
 
-.menu > ul > li > ul > li:hover {
+.semiTitleDetail > li:hover {
   background-color: orange;
   transition: ease ls;
 }
