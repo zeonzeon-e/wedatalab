@@ -1,0 +1,225 @@
+        <div id="bookSection">
+            <div id="books">Books</div>
+            <div class="slide"> 
+                <div class="booksList book1">
+                    <img src="https://wedatalab.com/wp-content/uploads/2023/06/%EC%95%BC%EB%A7%8C%EC%9D%B81.png" width="200px" height="200px"></img>
+                    <p>야사와 만화로 배우는 인공지능 1</p>
+                </div>
+                <div class="booksList book2">
+                    <img src="https://wedatalab.com/wp-content/uploads/2023/06/%EC%95%BC%EB%A7%8C%EC%9D%B82.png" width="200px" height="200px"></img>
+                    <p>야사와 만화로 배우는 인공지능 2</p>
+                </div>
+                <div class="booksList book3">
+                    <img src="https://wedatalab.com/wp-content/uploads/2023/06/%EC%95%BC%EB%A7%8C%EC%9D%B83.png" width="200px" height="200px"></img>
+                    <p>야사와 만화로 배우는 인공지능 3</p>
+                </div>
+                <div class="booksList boo4">
+                    <img src="https://wedatalab.com/wp-content/uploads/2023/06/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D.png" width="200px" height="200px"></img>
+                    <p>머신러닝 배웠으니 활용해볼까요?</p>
+                </div>
+                <div class="booksList book5">
+                    <img src="https://wedatalab.com/wp-content/uploads/2023/06/SQL1-3.png" width="200px" height="200px"></img>
+                    <p>비전공자를 위한 EXCEL로 처음 만나는 SQL</p>
+                </div>
+                <div class="slide_prev_button slide_button">◀</div>
+                <div class="slide_next_button slide_button">▶</div>
+            </div>
+            
+            <p id="more"> 더 많은 책 보러가기 </p>
+        </div>
+
+
+
+        .swiper-button-prev,
+.swiper-button-next {
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-button-prev {
+  left: 120px;
+}
+.swiper-button-next {
+  right: 120px;
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: "";
+  display: none;
+}
+
+
+        <nav>
+            <div class="header__menu-box">
+                <ul>
+                <li><a href="#">COMPANY</a>
+                    <ul>
+                        <li><a href="#">INTRODUCTION</a></li>
+                        <li><a href="#">CEO Message</a></li>
+                        <li><a href="#">CAIO Intro.</a></li>
+                        <li><a href="#">CTO Intro.</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">서울데이터과학연구회</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SOLUTION</a>
+                    <ul>
+                        <li><a href="#">DBMS Monitoring</a></li>
+                        <li><a href="#">DBMS Audit</a></li>
+                        <li><a href="#">APM Monitoring</a></li>
+                        <li><a href="#">AI Vision</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CONTENTS</a>
+                    <ul>
+                        <li><a href="#">AI PORTAL</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">YOUTUBE</a></li>
+                        <li><a href="#">BOOKS</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ACADEMY</a>
+                    <ul>
+                        <li><a href="#">ACADEMY<br>INTRODUCTION</a></li>
+                        <li><a href="#">LECTURE</a></li>
+                            <ul>
+                                <li><a href="#">야사와 만화로 배우는 인공지능 강의</a></li>
+                                <li><a href="#">파이썬</a></li>
+                                <li><a href="#">웹 퍼블리싱</a></li>
+                                <li><a href="#">Scratch 게임 만들기</a></li>
+                            </ul>
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="#">기업강의 신청</a></li>
+                        <li><a href="#">게시판/블로그</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">NEWS</a>
+                </li>
+                <li>
+                    <button>FREE DOWNLOAD</button>
+                </li>
+            </ul>
+            </div>
+            <div id="menu1">
+                <ul class="main">
+                    <li><a href="#">MENU1</a>
+                        <ul class="sub">
+                            <li><a href="#">SUB1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+swiper.html
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--css 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+  <!-- SWIPER 외부 라이브러리 연결-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  
+  <!--google material icon 사용
+  class="material-icons"-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- main.css 연결 -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- main.js 연결 -->
+  <script defer src="mainpage.js"></script>
+</head>
+
+<body>
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <table>
+            <tr>
+                <td><img src="https://wedatalab.com/wp-content/uploads/2023/06/%EC%95%BC%EB%A7%8C%EC%9D%B81.png" width="200px" height="200px"></img></td>
+            </tr>
+            <tr>
+                <td>야사와 만화로 배우는 인공지능 1</td>
+            </tr>
+        </table>
+      </div>
+      <div class="swiper-slide">
+        <table>
+            <tr>
+                <td><img src="https://wedatalab.com/wp-content/uploads/2023/06/%EC%95%BC%EB%A7%8C%EC%9D%B82.png" width="200px" height="200px"></img></td>
+            </tr>
+            <tr>
+                <td>야사와 만화로 배우는 인공지능 2</td>
+            </tr>
+        </table>
+      </div>
+      <div class="swiper-slide">
+        <table>
+            <tr>
+                <td><img src="https://wedatalab.com/wp-content/uploads/2023/06/%EC%95%BC%EB%A7%8C%EC%9D%B83.png" width="200px" height="200px"></img></td>
+            </tr>
+            <tr>
+                <td>야사와 만화로 배우는 인공지능 3</td>
+            </tr>
+        </table>
+      </div>
+      <div class="swiper-slide">
+        <table>
+            <tr>
+                <td><img src="https://wedatalab.com/wp-content/uploads/2023/06/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D.png" width="200px" height="200px"></img></td>
+            </tr>
+            <tr>
+                <td>머신러닝 배웠으니 활용해볼까요?</td>
+            </tr>
+        </table>
+      </div>
+      <div class="swiper-slide">
+        <table>
+            <tr>
+                <td><img src="https://wedatalab.com/wp-content/uploads/2023/06/SQL1-3.png" width="200px" height="200px"></img></td>
+            </tr>
+            <tr>
+                <td>비전공자를 위한 EXCEL로 처음 만나는 SQL</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev">
+      <div class="material-icons">arrow_back</div>
+    </div>
+    <div class="swiper-button-next">
+      <div class="material-icons">arrow_forward</div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
