@@ -2,7 +2,7 @@ body{
   margin: auto;
   text-align: center;
   width: 100%;
-  justify-content: center;
+
 }
 
 
@@ -217,27 +217,41 @@ nav{
 
 .menu {
   display: flex;
+  height: 100%;
   font: bold 16px;
   width: 60%;
   color: black;
   z-index: 2;
-  justify-content: flex-end;
 
 }
 
 .menuUrl {
+  display: flex;
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.menuDetail{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .semiTitle {
-  float: left;
+  display: block;
+  position: relative;
   width: fit-content;
-  padding-right: 20px;
-  align-items: center;
   list-style: none;
-  
+  font-weight: bold;
+}
+
+.semiTitle a {
+  text-decoration: none;
+  color: black;
 }
 
 .semiTitleDetail {
@@ -245,18 +259,23 @@ nav{
   display: none;
   position: absolute;
   font-size: 14px;
+  background: white;
+  border-top: skyblue 5px solid;
+}
 
-  background: skyblue;
+.semiTitleDetail > li {
+  padding : 10px;
 }
 
 .semiTitle:hover > ul {
   display: block;
   z-index: 3;
+
 }
 
 .semiTitleDetail > li:hover {
-  background-color: orange;
-  transition: ease ls;
+  background-color: rgb(212, 243, 255);
+  transition: ease 0.5s;
 }
 
 .clientsSwiper > .swiper-wrapper > .swiper-slide > img{
